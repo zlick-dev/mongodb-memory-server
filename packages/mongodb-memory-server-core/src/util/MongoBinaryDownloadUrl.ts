@@ -366,7 +366,7 @@ export default class MongoBinaryDownloadUrl {
         return 'i386';
       }
       throw new Error('unsupported architecture');
-    } else if (arch === 'x64') {
+    } else if (arch === 'x64' || arch === 'arm64') {
       return 'x86_64';
     } else {
       throw new Error('unsupported architecture, ia32 and x64 are the only valid options');
